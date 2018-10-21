@@ -9,11 +9,9 @@
 
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.css">
   <style type="text/css">
-    body {
-  box-sizing: border-box;
-  border-style: none;
-  padding: 0px;
-  margin: 0px;
+       body {
+  padding: 0;
+  margin: 0;
 }
 
 .label-sheet {
@@ -23,24 +21,44 @@
   box-sizing: border-box;
   display: inline-grid;
   grid-template-columns: 16mm auto;
-  justify-content: start;
-  align-content: space-evenly;
+  justify-content: stretch;
+  grid-column-gap: 2mm;
+  align-content: stretch;
+  align-items: center;
+  grid-row-gap: 2mm;
   width: 86mm;
   height: 73mm;
   border: 1mm solid black;
+  border-radius: 4mm;
   padding: 4mm;
   margin: 4mm;
-  font-size: 10mm;
+}
+
+.set {
+  font-size: 16mm;
+  line-height: 16mm;
+}
+
+.set:nth-last-child(8):first-child, 
+.set:nth-last-child(8):first-child ~ .set {
+  font-size: 12mm;
+  line-height: 12mm;
 }
 
 .set-symbol {
+  height: 100%;
   text-align: center;
 }
 
 .set-name {
-  text-align: left;
+  height: 100%;
+  text-align: center;
 }
 
+.set-name img {
+  max-height: 100%;
+  max-width: 100%;
+}
   </style>
 
 </head>
@@ -49,50 +67,403 @@
 
   <span class="label">
 
-    <span class="set-symbol">
-      <i class="ss ss-ala"></i>  
+    <span class="set set-symbol">
+      <i class="ss ss-mrd"></i>  
     </span>
-    <span class="set-name">
-      Shards of Alara 
-    </span>
-
-    <span class="set-symbol">
-      <i class="ss ss-con"></i>
-    </span>
-    <span class="set-name">
-      Conflux
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/6/64/MRD_logo.png?version=02c26b05622e45b5b877e28bf7c0b038" alt="Mirrodin" title="Mirrodin" />
     </span>
 
-    <span class="set-symbol">
+    <span class="set set-symbol">
+      <i class="ss ss-dst"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/e/e0/DST_logo.jpg?version=88c0f25ff176f70eb9ea6cf24de370a7" alt="Darksteel" title="Darksteel" />
+    </span>
+
+    <span class="set set-symbol">
       <i class="ss ss-arb"></i> 
     </span>
-    <span class="set-name">
-      Alara Reborn
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/9/93/5DN_logo.jpg?version=0c2d493b8188ab70bc8e88c724e6c880" alt="Fifth Dawn" title="Fifth Dawn" />
+    </span>
+    
+  </span>
+
+  <span class="label">
+
+    <span class="set set-symbol">
+      <i class="ss ss-chk"></i>  
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/9/92/CHK_logo.png?version=6b82f1fc761e76d16a8d6738cd52f112" alt="Champions of Kamigawa" title="Champions of Kamigawa" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-bok"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/d/de/BOK_logo.jpg/375px-BOK_logo.jpg?version=8029fb5faa752ddeb466582e866da017" alt="Betrayers of Kamigawa" title="Betrayers of Kamigawa" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-sok"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/5/5c/SOK_logo.png/375px-SOK_logo.png?version=da51f374c2ab19941d84af6a01f7458d" alt="Saviors of Kamigawa" title="Saviors of Kamigawa" />
+    </span>
+    
+  </span>
+
+  <span class="label">
+
+    <span class="set set-symbol">
+      <i class="ss ss-rav"></i>  
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/7/71/RAV_logo.jpg/375px-RAV_logo.jpg?version=90ef883eaa09cd77fd7e4a505f673de4" alt="Ravnica, City of Guilds" title="Ravnica, City of Guilds" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-gpt"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/2/25/GPT_logo.png?version=d006daaa4ca0c45016b9f47a1c109619" alt="Guildpact" title="Guildpact" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-dis"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/b/b5/DIS_logo.png?version=76ecb41f57c6f152eb9381744eeb3c61" alt="Dissention" title="Dissention" />
+    </span>
+    
+  </span>
+
+  <span class="label">
+
+    <span class="set set-symbol">
+      <i class="ss ss-csp"></i>  
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/6/6f/CSP_logo.jpg/375px-CSP_logo.jpg?version=e43a5734449908e8be5bd14145e89d4a" alt="Coldsnap" title="Coldsnap" />
+    </span>
+    
+    <span class="set set-symbol">
+      <i class="ss ss-tsp"></i>  
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/5/5c/TSP_logo.jpg/375px-TSP_logo.jpg?version=fe3b7a14bffb9624740ee307c3eea4c3" alt="Time Spiral" title="Time Spiral" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-plc"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/e/e3/PLC_logo.jpg/375px-PLC_logo.jpg?version=610bfc1aaaafadd94868209492b65fc3" alt="Planar Chaos" title="Planar Chaos" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-fut"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/5/55/FUT_logo.png?version=c85d8c65378da9d2fb1ae3f14906d8cf" alt="Future Sight" title="Future Sight" />
+    </span>
+    
+  </span>
+
+  <span class="label">
+
+    <span class="set set-symbol">
+      <i class="ss ss-lrw"></i>  
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/e/e7/LRW_logo.png?version=8f4ba5ca71205d2bb42035b85e70ee57" alt="Lorwyn" title="Lorwyn" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-mor"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/e/e2/MOR_logo.png?version=9f0b5cf772fd1c1fad49fe194f716880" alt="Morningtide" title="Morningtide" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-shm"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/d/d6/SHM_logo.jpg/375px-SHM_logo.jpg?version=15427e8380b824e46809db028d8e0ec0" alt="Shadowmoor" title="Shadowmoor" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-eve"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/b/bc/EVE_logo.png?version=cc492b341deb3d74abf5fdad5fabf0d6" alt="Eventide" title="Eventide" />
+    </span>
+    
+  </span>
+
+  <span class="label">
+
+    <span class="set set-symbol">
+      <i class="ss ss-ala"></i>  
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/8/86/ALA_logo.png?version=add143da9db6569aa97be23429de7d44" alt="Shards of Alara" title="Shards of Alara" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-con"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/a/ad/CON_logo.png?version=b8aebcb39d996af097ab6d4821bc4899" alt="Conflux" title="Conflux" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-arb"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/0/04/ARB_logo.png/375px-ARB_logo.png?version=fc798993b8e7bc1157a5478f2710ccba" alt="Alara Reborn" title="Alara Reborn" />
     </span>
     
   </span>
 
   <span class="label">
   
-    <span class="set-symbol">
+    <span class="set set-symbol">
       <i class="ss ss-zen"></i> 
     </span>
-    <span class="set-name">
-      Zendkiar
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/d/d1/Zendikar_logo.png/375px-Zendikar_logo.png?version=da5fc4936573c1f88a0faa897b38f6a5" alt="Zendkiar" title="Zendkiar" />
     </span>
 
-    <span class="set-symbol">
+    <span class="set set-symbol">
       <i class="ss ss-wwk"></i> 
     </span>
-    <span class="set-name">
-      Worldwake
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/7/70/Worldwake_logo.jpg/375px-Worldwake_logo.jpg?version=4ba655db6a0cb8e355954a602cadeaff" alt="Worldwake" title="Worldwake" />
     </span>
 
-    <span class="set-symbol">
+    <span class="set set-symbol">
       <i class="ss ss-roe"></i>
     </span>
-    <span class="set-name">
-      Rise of the Eldrazi
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/3/33/Rise_of_the_Eldrazi_logo.png/375px-Rise_of_the_Eldrazi_logo.png?version=adc1c2703928cf03e4fd5a2843762443" alt="Rise of the Eldrazi" title="Rise of the Eldrazi" />
+    </span>
+    
+  </span>
+
+  <span class="label">
+  
+    <span class="set set-symbol">
+      <i class="ss ss-som"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/3/3e/SOM_logo.png/375px-SOM_logo.png?version=624fa099c458fb9123d8c9aee22bb132" alt="Scars of Mirrodin" title="Scars of Mirrodin" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-mbs"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/5/51/MBS_logo.jpg/375px-MBS_logo.jpg?version=bbd270777dec0ee57fa45e4f5513ef02" alt="Mirrodin Besieged" title="Mirrodin Besieged" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-nph"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/6/61/NPH_logo.jpg?version=347fdeb1ec7132913a03c35e9f4831d2" alt="New Phyrexia" title="New Phyrexia" />
+    </span>
+    
+  </span>
+  
+  <span class="label">
+  
+    <span class="set set-symbol">
+      <i class="ss ss-isd"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/f/f6/ISD_logo.jpg?version=60b92fb550964d5ea88e7a460ef12abd" alt="Innistrad" title="Innistrad" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-dka"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/3/3a/DKA_logo.jpg/375px-DKA_logo.jpg?version=167640d9e67d1138b5d49c36e3636b40" alt="Dark Ascension" title="Dark Ascension" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-avr"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/9/96/AVR_logo.jpg/375px-AVR_logo.jpg?version=353843ea6a05f2ea1358db29baa2332f" alt="Avacyn Restored" title="Avacyn Restored" />
+    </span>
+    
+  </span>
+  
+  <span class="label">
+  
+    <span class="set set-symbol">
+      <i class="ss ss-rtr"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/d/d2/RTR_logo.jpg/375px-RTR_logo.jpg?version=3694f329d95a1abc28f32fb62f5d1063" alt="Return to Ravnica" title="Return to Ravnica" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-gtc"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/f/f0/GTC_logo.jpg/375px-GTC_logo.jpg?version=029e7e151042b18b098775da86f58a3f" alt="Gatecrash" title="Gatecrash" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-dgm"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/f/f8/DGM_logo.png/375px-DGM_logo.png?version=58101d32c6e97ca66f3c1bb0afd6b78e" alt="Dragon's Maze" title="Dragon's Maze" />
+    </span>
+    
+  </span>
+  
+  <span class="label">
+  
+    <span class="set set-symbol">
+      <i class="ss ss-ths"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/c/c9/THS_logo.jpg/375px-THS_logo.jpg?version=db824ec3a348ceb2edd5f282fc157001" alt="Theros" title="Theros" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-bng"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/c/c6/BNGLogo.jpg/375px-BNGLogo.jpg?version=1d9220a19f1f719e966e1a67d1a57ec2" alt="Born of the Gods" title="Born of the Gods" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-jou"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/7/79/JOULogo.jpg/375px-JOULogo.jpg?version=424e068f97dfbd1bc063685e1fcd8535" alt="Journey into Nyx" title="Journey into Nyx" />
+    </span>
+    
+  </span>
+  
+  <span class="label">
+  
+    <span class="set set-symbol">
+      <i class="ss ss-ktk"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/d/db/Logo_Khans_of_Tarkir.png/375px-Logo_Khans_of_Tarkir.png?version=b6d77bb8c066a917965f70ad0a6231da" alt="Khans of Tarkir" title="Khans of Tarkir" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-frf"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/c/c7/Logo_Fate_Reforged.png?version=65e0631afaefd2e2777526738813ff91" alt="Fate Reforged" title="Fate Reforged" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-dtk"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/e/e1/Logo_Dragons_of_Tarkir.png?version=3f7ae70ddd26e3cc4798b76b90746ca9" alt="Dragons of Tarkir" title="Dragons of Tarkir" />
+    </span>
+    
+  </span>
+  
+  <span class="label">
+  
+    <span class="set set-symbol">
+      <i class="ss ss-bfz"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/3/3f/BFZ_logo.png/375px-BFZ_logo.png?version=6829221d176177d0187ad33bab370cc6" alt="Battle for Zendikar" title="Battle for Zendikar" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-ogw"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/1/17/OGW_Logo.png/375px-OGW_Logo.png?version=47d0f3a798100bf7e338b0de9527d233" alt="Oath of the Gatewatch" title="Oath of the Gatewatch" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-soi"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/7/76/Shadows_over_Innistrad.png/375px-Shadows_over_Innistrad.png?version=119c6e0e2fbbd4981e404c6fa9398d34" alt="Shadows Over Innistrad" title="Shadows Over Innistrad" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-emn"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/1/1a/Eldritch_Moon.png/375px-Eldritch_Moon.png?version=217c52a08e3d8c9761218f52ada8f810" alt="Eldritch Moon" title="Eldritch Moon" />
+    </span>
+    
+  </span>
+
+  <span class="label">
+  
+    <span class="set set-symbol">
+      <i class="ss ss-kld"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/f/f5/KLD_set_logo.png?version=46c37a4afd0a43536e0126c15ea828fc" alt="Kaladesh" title="Kaladesh" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-aer"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/5/59/AER_set_logo.png?version=c5c228a296c1d0da510e88c620b63557" alt="Aether Revolt" title="Aether Revolt" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-akh"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/6/69/AKH_set_logo.png?version=72c5c610da44f93afc284b3f3b763665" alt="Amonkhet" title="Amonkhet" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-hou"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/2/28/HOU_set_logo.png?version=415ea86c90b23c40f6a7698572d17268" alt="Hour of Devastation" title="Hour of Devastation" />
+    </span>
+    
+  </span>
+  
+  <span class="label">
+  
+    <span class="set set-symbol">
+      <i class="ss ss-xln"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/1/19/XLN_set_logo.png/375px-XLN_set_logo.png?version=bd6d5c7be8b51fe6d190904b151a78b5" alt="Ixalan" title="Ixalan" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-rix"></i> 
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/f/f6/RIX_logo.png/375px-RIX_logo.png?version=b89d107cd6c5bddd7c58271961d046ee" alt="Rivals of Ixalan" title="Rivals of Ixalan" />
+    </span>
+
+    <span class="set set-symbol">
+      <i class="ss ss-dom"></i>
+    </span>
+    <span class="set set-name">
+      <img src="https://d1u5p3l4wpay3k.cloudfront.net/mtgsalvation_gamepedia/thumb/c/ce/DOM_logo.png/375px-DOM_logo.png?version=b578ec4cd14d8b6fcd6dece81576df68" alt="Dominaria" title="Dominaria" />
     </span>
     
   </span>
